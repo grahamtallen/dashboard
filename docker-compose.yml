@@ -1,0 +1,10 @@
+# snippet from docker-compose.yml
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    ports:
+      - 8086:8086
+    volumes:
+      - /opt/appdata/influxdb:/var/lib/influxdb
+    restart:
+      always

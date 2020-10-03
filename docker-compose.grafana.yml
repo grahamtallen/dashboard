@@ -1,0 +1,10 @@
+# snippet from docker-compose.yml
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3001:3000
+    volumes:
+      - /opt/appdata/grafana:/var/lib/grafana
+    restart:
+      always
