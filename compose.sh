@@ -1,1 +1,1 @@
-cat services-enabled/docker-compose.*.yml > docker-compose.yml
+cat services-available/docker-compose.*.yml > docker-compose.yml
