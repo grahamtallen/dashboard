@@ -5,6 +5,6 @@
     ports:
       - 8086:8086
     volumes:
-      - ./data/influxdb:/var/lib/influxdb
+      - influxdb:/var/lib/influxdb
     restart:
       always
